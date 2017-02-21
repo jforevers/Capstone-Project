@@ -96,6 +96,9 @@
                                 <rect key="frame" x="168" y="552" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="bBZ-f9-3vG" kind="show" id="IZ5-ib-H1X"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you a citizen of the United States " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ps8-Rh-rpN">
                                 <rect key="frame" x="35" y="61" width="294" height="36"/>
@@ -123,6 +126,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PY7-hi-hqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1225" y="-617"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="22d-3j-u5r">
+            <objects>
+                <viewController id="bBZ-f9-3vG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Hg-oD-hQj"/>
+                        <viewControllerLayoutGuide type="bottom" id="nys-PM-1F4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="93p-wj-WdR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mzs-Nr-0ey" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2033" y="-618"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TMe-HI-5Pv">
