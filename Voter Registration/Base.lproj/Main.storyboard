@@ -512,11 +512,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9W-Ab-FRY">
-                                <rect key="frame" x="119" y="548" width="129" height="30"/>
+                                <rect key="frame" x="205" y="556" width="129" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SUBMIT"/>
                                 <connections>
                                     <segue destination="d19-3S-Ud7" kind="show" id="lHO-AL-vYL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y78-f3-J8u">
+                                <rect key="frame" x="70" y="556" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="nxI-th-Rh8" kind="show" id="sc2-Nh-7cs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -761,8 +769,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="scS-fP-Rg1"/>
-        <segue reference="D3b-5Q-S8T"/>
+        <segue reference="sc2-Nh-7cs"/>
+        <segue reference="URf-nF-W5e"/>
         <segue reference="ja4-Xb-I03"/>
     </inferredMetricsTieBreakers>
 </document>
