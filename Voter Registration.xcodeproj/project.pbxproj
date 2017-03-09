@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA169E891E6F63D300CFDE9F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA169E881E6F63D300CFDE9F /* LoginController.swift */; };
 		F8A2F4D61E412D21001A9427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4D51E412D21001A9427 /* AppDelegate.swift */; };
 		F8A2F4DB1E412D21001A9427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A2F4D91E412D21001A9427 /* Main.storyboard */; };
 		F8A2F4DE1E412D21001A9427 /* Voter_Registration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4DC1E412D21001A9427 /* Voter_Registration.xcdatamodeld */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA169E881E6F63D300CFDE9F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		F8A2F4D21E412D21001A9427 /* Voter Registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voter Registration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A2F4D51E412D21001A9427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A2F4DA1E412D21001A9427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				F8A2F4D51E412D21001A9427 /* AppDelegate.swift */,
 				F8A2F4D91E412D21001A9427 /* Main.storyboard */,
+				AA169E881E6F63D300CFDE9F /* LoginController.swift */,
 				F8A2F4DF1E412D21001A9427 /* Assets.xcassets */,
 				F8A2F4E11E412D22001A9427 /* LaunchScreen.storyboard */,
 				F8A2F4E41E412D22001A9427 /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8A2F4D61E412D21001A9427 /* AppDelegate.swift in Sources */,
+				AA169E891E6F63D300CFDE9F /* LoginController.swift in Sources */,
 				F8A2F4DE1E412D21001A9427 /* Voter_Registration.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +507,7 @@
 				F8A2F4FF1E412D22001A9427 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8A2F5001E412D22001A9427 /* Build configuration list for PBXNativeTarget "Voter RegistrationTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				F8A2F5021E412D22001A9427 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8A2F5031E412D22001A9427 /* Build configuration list for PBXNativeTarget "Voter RegistrationUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				F8A2F5051E412D22001A9427 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
