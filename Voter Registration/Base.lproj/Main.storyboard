@@ -323,7 +323,7 @@
         <!--Name and gender-->
         <scene sceneID="22d-3j-u5r">
             <objects>
-                <viewController id="bBZ-f9-3vG" userLabel="Name and gender" sceneMemberID="viewController">
+                <viewController id="bBZ-f9-3vG" userLabel="Name and gender" customClass="RegistrationViewController" customModule="Voter_Registration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Hg-oD-hQj"/>
                         <viewControllerLayoutGuide type="bottom" id="nys-PM-1F4"/>
@@ -422,7 +422,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="8Al-8w-aEg" kind="show" id="URf-nF-W5e"/>
+                                    <segue destination="8Al-8w-aEg" kind="show" identifier="nameToAddress" id="URf-nF-W5e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E42-wV-U3a">
@@ -430,21 +430,29 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="L79-9z-jvt" kind="show" id="ja4-Xb-I03"/>
+                                    <segue destination="L79-9z-jvt" kind="show" identifier="nameToFirst" id="ja4-Xb-I03"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="femaleSwitch" destination="uqh-uW-ytP" id="Ghz-4v-hqX"/>
+                        <outlet property="firstName" destination="K3T-2R-Bde" id="AH7-rt-KFe"/>
+                        <outlet property="lastName" destination="pPG-C0-Qzi" id="vQx-AX-nzy"/>
+                        <outlet property="maleSwitch" destination="J8t-Ll-toF" id="nsm-Z8-abl"/>
+                        <outlet property="middleName" destination="iFU-nE-8yH" id="2ni-Bv-0aa"/>
+                        <outlet property="suffix" destination="BaL-50-wdu" id="gRc-eT-0GP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzs-Nr-0ey" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2060" y="-617.54122938530736"/>
         </scene>
-        <!--View Controller-->
+        <!--Address-->
         <scene sceneID="hg4-xB-b4C">
             <objects>
-                <viewController id="8Al-8w-aEg" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Al-8w-aEg" userLabel="Address" customClass="RegistrationViewController" customModule="Voter_Registration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NpT-Qf-lFh"/>
                         <viewControllerLayoutGuide type="bottom" id="Ofs-kC-d36"/>
@@ -514,7 +522,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Yes"/>
                                 <connections>
-                                    <segue destination="i0q-ry-uP3" kind="show" id="jbQ-y6-yFv"/>
+                                    <segue destination="i0q-ry-uP3" kind="show" identifier="addressToRural" id="jbQ-y6-yFv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaD-mj-ASf">
@@ -522,7 +530,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="No"/>
                                 <connections>
-                                    <segue destination="nxI-th-Rh8" kind="show" id="VXN-Va-k5v"/>
+                                    <segue destination="nxI-th-Rh8" kind="show" identifier="addressToSSN" id="VXN-Va-k5v"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you a rural voter?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwK-HV-ZxP">
@@ -548,10 +556,10 @@
             </objects>
             <point key="canvasLocation" x="2853.5999999999999" y="-618.44077961019491"/>
         </scene>
-        <!--View Controller-->
+        <!--SSN-->
         <scene sceneID="sxY-9e-sEf">
             <objects>
-                <viewController id="nxI-th-Rh8" sceneMemberID="viewController">
+                <viewController id="nxI-th-Rh8" userLabel="SSN" customClass="RegistrationViewController" customModule="Voter_Registration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hff-iY-mGB"/>
                         <viewControllerLayoutGuide type="bottom" id="vAD-L1-mrJ"/>
@@ -614,7 +622,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="8Al-8w-aEg" kind="show" id="scS-fP-Rg1"/>
+                                    <segue destination="8Al-8w-aEg" kind="show" identifier="SSNToAddress" id="scS-fP-Rg1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h0-7f-0mX">
@@ -622,7 +630,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="yLs-5x-AHm" kind="show" id="GST-mr-OYr"/>
+                                    <segue destination="yLs-5x-AHm" kind="show" identifier="SSNToFinal" id="GST-mr-OYr"/>
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ecu-wJ-Y67">
@@ -647,10 +655,10 @@
             </objects>
             <point key="canvasLocation" x="3844" y="-389.05547226386807"/>
         </scene>
-        <!--View Controller-->
+        <!--Signature-->
         <scene sceneID="I2O-em-nqM">
             <objects>
-                <viewController id="yLs-5x-AHm" sceneMemberID="viewController">
+                <viewController id="yLs-5x-AHm" userLabel="Signature" customClass="RegistrationViewController" customModule="Voter_Registration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7BU-56-uH4"/>
                         <viewControllerLayoutGuide type="bottom" id="mOK-Ps-QaY"/>
@@ -699,7 +707,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SUBMIT"/>
                                 <connections>
-                                    <segue destination="d19-3S-Ud7" kind="show" id="lHO-AL-vYL"/>
+                                    <segue destination="d19-3S-Ud7" kind="show" identifier="finalToHome" id="lHO-AL-vYL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y78-f3-J8u">
@@ -725,10 +733,10 @@
             </objects>
             <point key="canvasLocation" x="4815.1999999999998" y="-586.05697151424295"/>
         </scene>
-        <!--View Controller-->
+        <!--Rural-->
         <scene sceneID="pZw-aq-AOe">
             <objects>
-                <viewController id="i0q-ry-uP3" sceneMemberID="viewController">
+                <viewController id="i0q-ry-uP3" userLabel="Rural" customClass="RegistrationViewController" customModule="Voter_Registration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WfB-IA-nql"/>
                         <viewControllerLayoutGuide type="bottom" id="ojh-Ss-yYX"/>
@@ -819,7 +827,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="nxI-th-Rh8" kind="show" id="D3b-5Q-S8T"/>
+                                    <segue destination="nxI-th-Rh8" kind="show" identifier="ruralToSSN" id="D3b-5Q-S8T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6f-px-2Ib">
@@ -827,7 +835,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="8Al-8w-aEg" kind="show" id="rIj-qs-ydo"/>
+                                    <segue destination="8Al-8w-aEg" kind="show" identifier="ruralToAddress" id="rIj-qs-ydo"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H2B-dx-LpO">
@@ -999,7 +1007,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sc2-Nh-7cs"/>
         <segue reference="URf-nF-W5e"/>
+        <segue reference="D3b-5Q-S8T"/>
     </inferredMetricsTieBreakers>
 </document>
