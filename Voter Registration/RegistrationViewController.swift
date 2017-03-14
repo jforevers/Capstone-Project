@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class RegistrationViewController: UIViewController {
 
@@ -15,6 +16,7 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var Citizen_switch: UISwitch!
     @IBOutlet weak var residentSwitch: UISwitch!
     @IBOutlet weak var ageSwitch: UISwitch!
+    @IBOutlet weak var firstPageError: UILabel!
     
     
     override func viewDidLoad() {
@@ -43,7 +45,13 @@ class RegistrationViewController: UIViewController {
     
     // MARK: - Navigation
 
-     @IBAction func toNameAndAge(_ sender: UIButton) {
+    func toNameAndAge() -> Bool {
+        if(!Citizen_switch.isOn || !residentSwitch.isOn || !ageSwitch.isOn)
+        {
+            displayError(errorText: firstPageError, errorMessage: "Must be a citizen, resident, and 18 before election day to register")
+            return false;
+        }
+        return true;
      }
      
      
@@ -51,6 +59,20 @@ class RegistrationViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+    }
+    
+    func displayError(errorText: UILabel, errorMessage:String) {
+        errorText.text = errorMessage
+        NSLog(errorMessage)
+        return
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?)-> Bool {
+        if identifier == "firstFormToName"
+        {
+            return toNameAndAge()
+        }
+        return true
     }
     
 
