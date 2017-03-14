@@ -226,7 +226,7 @@
         <!--Registration form-->
         <scene sceneID="Ptj-JZ-Ztt">
             <objects>
-                <viewController id="L79-9z-jvt" userLabel="Registration form" sceneMemberID="viewController">
+                <viewController id="L79-9z-jvt" userLabel="Registration form" customClass="RegistrationViewController" customModule="Voter_Registration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vDl-ap-mMR"/>
                         <viewControllerLayoutGuide type="bottom" id="zxT-4a-dFK"/>
@@ -276,6 +276,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="toNameAndAge:" destination="L79-9z-jvt" eventType="touchUpInside" id="4OF-rX-dps"/>
                                     <segue destination="bBZ-f9-3vG" kind="show" id="IZ5-ib-H1X"/>
                                 </connections>
                             </button>
@@ -301,6 +302,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Mcl-Tc-JKq"/>
+                    <connections>
+                        <outlet property="Citizen_switch" destination="FTj-vB-bUL" id="fa2-pw-oun"/>
+                        <outlet property="ageSwitch" destination="rpj-ss-hUT" id="XNZ-Xr-eSx"/>
+                        <outlet property="residentSwitch" destination="J6J-yB-gER" id="kOv-Of-gxm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PY7-hi-hqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
