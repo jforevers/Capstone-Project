@@ -21,8 +21,10 @@ class LoginController: UIViewController {
             return
         }
         
-        //attempt to valide with database
+        //attempt to validate with database
         attemptLogin(email: email.text!, password: password.text!)
+        
+        performSegue(withIdentifier: "loginComplete", sender: nil)
     }
 
     override func viewDidLoad() {
