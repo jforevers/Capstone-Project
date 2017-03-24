@@ -468,13 +468,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlf-V4-4kh">
-                                <rect key="frame" x="158" y="95" width="31" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhA-hy-iIQ">
                                 <rect key="frame" x="16" y="212" width="41" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -544,13 +537,30 @@
                                 <rect key="frame" x="158" y="420" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ele-2x-aU6">
-                                <rect key="frame" x="0.0" y="28" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlf-V4-4kh">
+                                <rect key="frame" x="17" y="115" width="31" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Flu-LW-85k">
+                                <rect key="frame" x="17" y="144" width="342" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="addressText" destination="ueW-Dk-Qoq" id="H6h-WW-uVU"/>
+                        <outlet property="cityText" destination="Flu-LW-85k" id="HOh-76-g3z"/>
+                        <outlet property="sameAddressAsMailSwitch" destination="Oce-NV-9t1" id="flU-de-bm5"/>
+                        <outlet property="stateText" destination="Eal-Fj-J1P" id="ba2-fH-lKj"/>
+                        <outlet property="zipcodeText" destination="nw5-nB-ibe" id="EZr-LM-siR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BXM-jY-vxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -633,13 +643,6 @@
                                     <segue destination="yLs-5x-AHm" kind="show" identifier="SSNToFinal" id="GST-mr-OYr"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ecu-wJ-Y67">
-                                <rect key="frame" x="-8" y="94" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <date key="date" timeIntervalSinceReferenceDate="509991649.85446501">
-                                    <!--2017-02-28 16:20:49 +0000-->
-                                </date>
-                            </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4L-ha-bAu">
                                 <rect key="frame" x="139" y="164" width="219" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -647,6 +650,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b31-PL-8dr">
+                                <rect key="frame" x="50" y="193" width="274" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -930,10 +940,10 @@
             </objects>
             <point key="canvasLocation" x="-785" y="-269"/>
         </scene>
-        <!--Item-->
+        <!--Welcome-->
         <scene sceneID="WSN-QX-NO2">
             <objects>
-                <viewController id="KNF-0M-AgC" sceneMemberID="viewController">
+                <viewController id="KNF-0M-AgC" userLabel="Welcome" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rpX-sF-oPS"/>
                         <viewControllerLayoutGuide type="bottom" id="0Qe-Lc-p7P"/>
@@ -949,6 +959,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfd-WZ-f7B" userLabel="Register to vote">
+                                <rect key="frame" x="16" y="425" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Register to vote"/>
+                                <connections>
+                                    <segue destination="L79-9z-jvt" kind="show" id="Azy-fv-bFA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -977,10 +995,10 @@
             </objects>
             <point key="canvasLocation" x="273" y="-269"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="3LA-4a-Rau">
             <objects>
-                <viewController id="k4A-sD-Kal" sceneMemberID="viewController">
+                <viewController id="k4A-sD-Kal" userLabel="Map" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CqL-t3-Ftu"/>
                         <viewControllerLayoutGuide type="bottom" id="2JT-Jk-9Pj"/>
@@ -1011,5 +1029,6 @@
         <segue reference="lfK-l8-rSV"/>
         <segue reference="VXN-Va-k5v"/>
         <segue reference="URf-nF-W5e"/>
+        <segue reference="VXN-Va-k5v"/>
     </inferredMetricsTieBreakers>
 </document>
