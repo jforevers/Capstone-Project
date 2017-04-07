@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67AAC1FE1E930B110094894B /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC1FD1E930B110094894B /* ChangeNameViewController.swift */; };
+		67AAC2001E930DEE0094894B /* ChangeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC1FF1E930DEE0094894B /* ChangeProfileViewController.swift */; };
+		67AAC2021E9310260094894B /* ChangeAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC2011E9310260094894B /* ChangeAddressViewController.swift */; };
+		67AAC2041E97320B0094894B /* RegistrationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC2031E97320B0094894B /* RegistrationPickerViewController.swift */; };
+		67AAC2081E9735E20094894B /* RuralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC2071E9735E20094894B /* RuralViewController.swift */; };
+		67AAC20A1E9735F40094894B /* ResidencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC2091E9735F40094894B /* ResidencyViewController.swift */; };
+		67AAC20C1E9736470094894B /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC20B1E9736470094894B /* NameViewController.swift */; };
+		67AAC20E1E9736650094894B /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC20D1E9736650094894B /* AddressViewController.swift */; };
+		67AAC2101E9737D20094894B /* BirthDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC20F1E9737D20094894B /* BirthDateViewController.swift */; };
+		AA169E891E6F63D300CFDE9F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA169E881E6F63D300CFDE9F /* LoginController.swift */; };
+		F843C42A1E786BA0008075DC /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843C4291E786BA0008075DC /* RegistrationViewController.swift */; };
 		F8A2F4D61E412D21001A9427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4D51E412D21001A9427 /* AppDelegate.swift */; };
 		F8A2F4DB1E412D21001A9427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A2F4D91E412D21001A9427 /* Main.storyboard */; };
 		F8A2F4DE1E412D21001A9427 /* Voter_Registration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4DC1E412D21001A9427 /* Voter_Registration.xcdatamodeld */; };
@@ -34,6 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67AAC1FD1E930B110094894B /* ChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
+		67AAC1FF1E930DEE0094894B /* ChangeProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeProfileViewController.swift; sourceTree = "<group>"; };
+		67AAC2011E9310260094894B /* ChangeAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeAddressViewController.swift; sourceTree = "<group>"; };
+		67AAC2031E97320B0094894B /* RegistrationPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPickerViewController.swift; sourceTree = "<group>"; };
+		67AAC2071E9735E20094894B /* RuralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuralViewController.swift; sourceTree = "<group>"; };
+		67AAC2091E9735F40094894B /* ResidencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResidencyViewController.swift; sourceTree = "<group>"; };
+		67AAC20B1E9736470094894B /* NameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		67AAC20D1E9736650094894B /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		67AAC20F1E9737D20094894B /* BirthDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthDateViewController.swift; sourceTree = "<group>"; };
+		AA169E881E6F63D300CFDE9F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F843C4291E786BA0008075DC /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		F8A2F4D21E412D21001A9427 /* Voter Registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voter Registration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A2F4D51E412D21001A9427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A2F4DA1E412D21001A9427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,10 +121,21 @@
 			children = (
 				F8A2F4D51E412D21001A9427 /* AppDelegate.swift */,
 				F8A2F4D91E412D21001A9427 /* Main.storyboard */,
+				67AAC20D1E9736650094894B /* AddressViewController.swift */,
+				AA169E881E6F63D300CFDE9F /* LoginController.swift */,
 				F8A2F4DF1E412D21001A9427 /* Assets.xcassets */,
 				F8A2F4E11E412D22001A9427 /* LaunchScreen.storyboard */,
 				F8A2F4E41E412D22001A9427 /* Info.plist */,
 				F8A2F4DC1E412D21001A9427 /* Voter_Registration.xcdatamodeld */,
+				F843C4291E786BA0008075DC /* RegistrationViewController.swift */,
+				67AAC1FD1E930B110094894B /* ChangeNameViewController.swift */,
+				67AAC1FF1E930DEE0094894B /* ChangeProfileViewController.swift */,
+				67AAC2011E9310260094894B /* ChangeAddressViewController.swift */,
+				67AAC2031E97320B0094894B /* RegistrationPickerViewController.swift */,
+				67AAC2071E9735E20094894B /* RuralViewController.swift */,
+				67AAC2091E9735F40094894B /* ResidencyViewController.swift */,
+				67AAC20B1E9736470094894B /* NameViewController.swift */,
+				67AAC20F1E9737D20094894B /* BirthDateViewController.swift */,
 			);
 			path = "Voter Registration";
 			sourceTree = "<group>";
@@ -260,6 +293,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8A2F4D61E412D21001A9427 /* AppDelegate.swift in Sources */,
+				67AAC2041E97320B0094894B /* RegistrationPickerViewController.swift in Sources */,
+				AA169E891E6F63D300CFDE9F /* LoginController.swift in Sources */,
+				67AAC2101E9737D20094894B /* BirthDateViewController.swift in Sources */,
+				67AAC20E1E9736650094894B /* AddressViewController.swift in Sources */,
+				67AAC2001E930DEE0094894B /* ChangeProfileViewController.swift in Sources */,
+				67AAC2021E9310260094894B /* ChangeAddressViewController.swift in Sources */,
+				67AAC2081E9735E20094894B /* RuralViewController.swift in Sources */,
+				67AAC20C1E9736470094894B /* NameViewController.swift in Sources */,
+				67AAC1FE1E930B110094894B /* ChangeNameViewController.swift in Sources */,
+				67AAC20A1E9735F40094894B /* ResidencyViewController.swift in Sources */,
+				F843C42A1E786BA0008075DC /* RegistrationViewController.swift in Sources */,
 				F8A2F4DE1E412D21001A9427 /* Voter_Registration.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +547,7 @@
 				F8A2F4FF1E412D22001A9427 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8A2F5001E412D22001A9427 /* Build configuration list for PBXNativeTarget "Voter RegistrationTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +556,7 @@
 				F8A2F5021E412D22001A9427 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8A2F5031E412D22001A9427 /* Build configuration list for PBXNativeTarget "Voter RegistrationUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +565,7 @@
 				F8A2F5051E412D22001A9427 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
