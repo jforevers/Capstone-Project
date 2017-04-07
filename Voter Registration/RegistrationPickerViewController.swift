@@ -24,12 +24,12 @@ class RegistrationPickerViewController: UIViewController {
     var rurView : UIViewController?
     var birView : UIViewController?
     
-    var currView = 0
+    var currView = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //setView(newView: 0)
+        setView(newView: 0)
         // Do any additional setup after loading the view.
     }
 
@@ -37,8 +37,11 @@ class RegistrationPickerViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func changeView(_ sender: Any) {
+        setView(newView: segCon.selectedSegmentIndex)
+    }
     
-    /*func setView(newView : Int){
+    func setView(newView : Int){
         switch(newView){
         case 0 :
             residencyView.isHidden = false
@@ -84,7 +87,7 @@ class RegistrationPickerViewController: UIViewController {
             
         }
         
-    }*/
+    }
 
 
     /*
