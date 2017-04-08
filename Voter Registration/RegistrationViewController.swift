@@ -6,9 +6,35 @@
 //  Copyright © 2017 Jeremy Evers. All rights reserved.
 //
 
+//  ViewController.h
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+@interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
+@end
 import UIKit
 import Foundation
 
+// Add this to the header of your file, e.g. in ViewController.m
+// after #import "ViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+// Extend the code sample provided in "7. Add Facebook Login Button Code"
+// In your viewDidLoad method:
+loginButton.readPermissions =
+@[@"public_profile", @"email", @"user_friends"];
+
+// Add this to the body
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    // Optional: Place the button in the center of your view.
+    loginButton.center = self.view.center;
+    [self.view addSubview:loginButton];
+}
+
+@end
 class RegistrationViewController: UIViewController {
 
     //MARK: Variables
@@ -53,6 +79,14 @@ class RegistrationViewController: UIViewController {
         }
         return true;
     }
+    
+   -/* (void)viewDidLoad
+    {
+    [super viewDidLoad];
+    if ([FBSDKAccessToken currentAccessToken]) {
+    // User is logged in, do work such as go to next view controller.
+    }
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
