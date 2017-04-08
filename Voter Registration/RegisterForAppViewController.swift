@@ -31,7 +31,7 @@ class RegisterForAppViewController: UIViewController {
             return
         }
         
-        if password != confirmPassword {
+        if password.text != confirmPassword.text {
             displayError(errorText: errorText, errorMessage: "Passwords must match")
             return
         }
