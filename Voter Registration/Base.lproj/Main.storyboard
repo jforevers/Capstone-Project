@@ -217,11 +217,11 @@
             </objects>
             <point key="canvasLocation" x="1280.8" y="113.3433283358321"/>
         </scene>
-        <!--Item-->
+        <!--Register-->
         <scene sceneID="Soc-O6-KIn">
             <objects>
-                <navigationController id="8SW-A8-IrL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="3NT-bh-0W6"/>
+                <navigationController title="Register" id="8SW-A8-IrL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Register" image="Register" id="3NT-bh-0W6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hKk-Qh-aBK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -408,7 +408,7 @@ of America?</string>
                             <constraint firstItem="Thi-yX-ucy" firstAttribute="top" secondItem="FTj-vB-bUL" secondAttribute="bottom" constant="40" id="xe8-4e-jBj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Mcl-Tc-JKq"/>
+                    <tabBarItem key="tabBarItem" title="Register" id="Mcl-Tc-JKq"/>
                     <navigationItem key="navigationItem" id="qXa-US-r5H"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PY7-hi-hqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1064,8 +1064,8 @@ bWF0aW9uIGlzIGNvcnJlY3QgdG8gdGhlIGJlc3QNb2YgeW91ciBrbm93bGVkZ2U
                     </tabBar>
                     <connections>
                         <segue destination="8SW-A8-IrL" kind="relationship" relationship="viewControllers" id="HvY-f5-s4R"/>
-                        <segue destination="tdr-Y6-Rwi" kind="relationship" relationship="viewControllers" id="vYw-KX-aA4"/>
                         <segue destination="n64-n4-UFg" kind="relationship" relationship="viewControllers" id="kJT-M9-5G0"/>
+                        <segue destination="tdr-Y6-Rwi" kind="relationship" relationship="viewControllers" id="Gou-Ks-EO7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eE9-4U-vyz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1131,7 +1131,7 @@ bWF0aW9uIGlzIGNvcnJlY3QgdG8gdGhlIGJlc3QNb2YgeW91ciBrbm93bGVkZ2U
                             <constraint firstItem="KtP-ki-XFn" firstAttribute="top" secondItem="UpT-gE-qp2" secondAttribute="bottom" id="zQN-Si-t9P"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="qvu-se-dBf"/>
+                    <tabBarItem key="tabBarItem" title="Edit Info" image="User" id="qvu-se-dBf"/>
                     <connections>
                         <outlet property="addChange" destination="UpT-gE-qp2" id="xO5-65-uVg"/>
                         <outlet property="nameChange" destination="N5D-m8-INr" id="hza-3q-pNE"/>
@@ -1142,11 +1142,11 @@ bWF0aW9uIGlzIGNvcnJlY3QgdG8gdGhlIGJlc3QNb2YgeW91ciBrbm93bGVkZ2U
             </objects>
             <point key="canvasLocation" x="536" y="-376"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="cmm-qt-d0Q">
             <objects>
                 <navigationController id="tdr-Y6-Rwi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="SZY-yI-ctd"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="Globe" id="SZY-yI-ctd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="M7h-9j-ltm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1190,4 +1190,9 @@ bWF0aW9uIGlzIGNvcnJlY3QgdG8gdGhlIGJlc3QNb2YgeW91ciBrbm93bGVkZ2U
             <point key="canvasLocation" x="1281" y="863"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Globe" width="25" height="25"/>
+        <image name="Register" width="25" height="25"/>
+        <image name="User" width="25" height="25"/>
+    </resources>
 </document>
