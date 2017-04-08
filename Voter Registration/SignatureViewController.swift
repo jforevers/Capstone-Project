@@ -1,17 +1,25 @@
 //
-//  RuralViewController.swift
+//  SignatureViewController.swift
 //  Voter Registration
 //
-//  Created by MU IT Program on 4/6/17.
+//  Created by Jeremy Evers on 4/8/17.
 //  Copyright © 2017 Jeremy Evers. All rights reserved.
 //
 
 import UIKit
 
-class RuralViewController: UIViewController {
+class SignatureViewController: UIViewController {
 
+    
+    @IBOutlet weak var DateLabel: UILabel!
+    var timer: Timer?
+    let dateFormatter = DateFormatter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        dateFormatter.dateStyle = .medium
+        let date = NSDate()
+        DateLabel.text = dateFormatter.string(from: date as Date)
         // Do any additional setup after loading the view.
     }
 
@@ -30,5 +38,9 @@ class RuralViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func SubmitRegistration(_ sender: UIButton) {
+    }
+    
 
 }
