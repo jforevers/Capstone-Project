@@ -25,6 +25,7 @@
 		F8A2F4E31E412D22001A9427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A2F4E11E412D22001A9427 /* LaunchScreen.storyboard */; };
 		F8A2F4EE1E412D22001A9427 /* Voter_RegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4ED1E412D22001A9427 /* Voter_RegistrationTests.swift */; };
 		F8A2F4F91E412D22001A9427 /* Voter_RegistrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4F81E412D22001A9427 /* Voter_RegistrationUITests.swift */; };
+		F8EC9BAA1E995B4F009A48AF /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC9BA91E995B4F009A48AF /* SignatureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		F8A2F4F41E412D22001A9427 /* Voter RegistrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voter RegistrationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A2F4F81E412D22001A9427 /* Voter_RegistrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voter_RegistrationUITests.swift; sourceTree = "<group>"; };
 		F8A2F4FA1E412D22001A9427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8EC9BA91E995B4F009A48AF /* SignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				67AAC2091E9735F40094894B /* ResidencyViewController.swift */,
 				67AAC20B1E9736470094894B /* NameViewController.swift */,
 				67AAC20F1E9737D20094894B /* BirthDateViewController.swift */,
+				F8EC9BA91E995B4F009A48AF /* SignatureViewController.swift */,
 			);
 			path = "Voter Registration";
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				67AAC20C1E9736470094894B /* NameViewController.swift in Sources */,
 				67AAC1FE1E930B110094894B /* ChangeNameViewController.swift in Sources */,
 				67AAC20A1E9735F40094894B /* ResidencyViewController.swift in Sources */,
+				F8EC9BAA1E995B4F009A48AF /* SignatureViewController.swift in Sources */,
 				F843C42A1E786BA0008075DC /* RegistrationViewController.swift in Sources */,
 				F8A2F4DE1E412D21001A9427 /* Voter_Registration.xcdatamodeld in Sources */,
 			);
