@@ -1,17 +1,18 @@
 //
-//  RuralViewController.swift
+//  MapsViewController.swift
 //  Voter Registration
 //
-//  Created by MU IT Program on 4/6/17.
+//  Created by Jordan Jones  on 4/8/17.
 //  Copyright © 2017 Jeremy Evers. All rights reserved.
 //
 
 import UIKit
 
-class RuralViewController: UIViewController {
+class MapsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
