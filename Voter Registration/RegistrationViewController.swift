@@ -25,6 +25,18 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var maleSwitch: UISwitch!
     @IBOutlet weak var femaleSwitch: UISwitch!
     
+    @IBOutlet weak var addressText: UITextField!
+    @IBOutlet weak var stateText: UITextField!
+    @IBOutlet weak var zipcodeText: UITextField!
+    @IBOutlet weak var sameAddressAsMailSwitch: UISwitch!
+    @IBOutlet weak var cityText: UITextField!
+    
+    
+    func checkAddress() -> Bool {
+        
+        return true
+    }
+    
     func checkName() -> Bool {
         if(firstName.text!.isEmpty || middleName.text!.isEmpty || lastName.text!.isEmpty || (maleSwitch.isOn && femaleSwitch.isOn) || (!maleSwitch.isOn && !femaleSwitch.isOn))
         {
@@ -65,8 +77,6 @@ class RegistrationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
@@ -87,5 +97,6 @@ class RegistrationViewController: UIViewController {
         return true
     }
     
+    //MARK: Actions
 
 }
