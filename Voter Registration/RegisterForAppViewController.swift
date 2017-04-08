@@ -41,10 +41,11 @@ class RegisterForAppViewController: UIViewController {
         
         performSegue(withIdentifier: "registrationComplete", sender: nil)
     }
-    
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        return false
+
+    @IBAction func backToLoginButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "backToLogin", sender: nil)
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
