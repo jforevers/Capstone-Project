@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pCu-VF-z3Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d19-3S-Ud7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -221,7 +221,7 @@
         <scene sceneID="Soc-O6-KIn">
             <objects>
                 <navigationController title="Register" id="8SW-A8-IrL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Register" id="3NT-bh-0W6"/>
+                    <tabBarItem key="tabBarItem" title="Register" image="Register" id="3NT-bh-0W6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hKk-Qh-aBK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1112,7 +1112,7 @@ bWF0aW9uIGlzIGNvcnJlY3QgdG8gdGhlIGJlc3QNb2YgeW91ciBrbm93bGVkZ2U
                             <constraint firstItem="KtP-ki-XFn" firstAttribute="top" secondItem="UpT-gE-qp2" secondAttribute="bottom" id="zQN-Si-t9P"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Edit Info" id="qvu-se-dBf"/>
+                    <tabBarItem key="tabBarItem" title="Edit Info" image="User" id="qvu-se-dBf"/>
                     <connections>
                         <outlet property="addChange" destination="UpT-gE-qp2" id="xO5-65-uVg"/>
                         <outlet property="nameChange" destination="N5D-m8-INr" id="hza-3q-pNE"/>
@@ -1127,7 +1127,7 @@ bWF0aW9uIGlzIGNvcnJlY3QgdG8gdGhlIGJlc3QNb2YgeW91ciBrbm93bGVkZ2U
         <scene sceneID="cmm-qt-d0Q">
             <objects>
                 <navigationController id="tdr-Y6-Rwi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="SZY-yI-ctd"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="Globe" id="SZY-yI-ctd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="M7h-9j-ltm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1171,4 +1171,9 @@ bWF0aW9uIGlzIGNvcnJlY3QgdG8gdGhlIGJlc3QNb2YgeW91ciBrbm93bGVkZ2U
             <point key="canvasLocation" x="1281" y="863"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Globe" width="25" height="25"/>
+        <image name="Register" width="25" height="25"/>
+        <image name="User" width="25" height="25"/>
+    </resources>
 </document>
