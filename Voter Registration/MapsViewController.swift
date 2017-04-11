@@ -7,29 +7,22 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class MapsViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //Creating a camera view for the maps page
+        let camera = GMSCameraPosition.camera(withLatitude: 38.9638 , longitude: -92.3755, zoom: 4.0)
+        let mapview = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        view = mapview
+        
+        //Creating a standard marker just to attempt placing pins
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: 38.9517, longitude: -92.3341)
+        marker.title = "Columbia"
+        marker.snippet = "Missouri"
+        marker.map = mapview
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
