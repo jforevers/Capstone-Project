@@ -37,7 +37,7 @@ class RegisterForAppViewController: UIViewController {
         }
         
         //attempt to validate with database
-        attemptLogin(email: email.text!, password: password.text!)
+        //attemptLogin(email: email.text!, password: password.text!)
         
         performSegue(withIdentifier: "registrationComplete", sender: nil)
     }
