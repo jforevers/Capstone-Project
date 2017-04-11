@@ -28,6 +28,7 @@
 		F8A2F4EE1E412D22001A9427 /* Voter_RegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4ED1E412D22001A9427 /* Voter_RegistrationTests.swift */; };
 		F8A2F4F91E412D22001A9427 /* Voter_RegistrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4F81E412D22001A9427 /* Voter_RegistrationUITests.swift */; };
 		F8EC9BAA1E995B4F009A48AF /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC9BA91E995B4F009A48AF /* SignatureViewController.swift */; };
+		F8EC9BAE1E9974B5009A48AF /* RegisterForAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC9BAD1E9974B5009A48AF /* RegisterForAppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		F8A2F4F81E412D22001A9427 /* Voter_RegistrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voter_RegistrationUITests.swift; sourceTree = "<group>"; };
 		F8A2F4FA1E412D22001A9427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8EC9BA91E995B4F009A48AF /* SignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		F8EC9BAD1E9974B5009A48AF /* RegisterForAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterForAppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		F8A2F4D41E412D21001A9427 /* Voter Registration */ = {
 			isa = PBXGroup;
 			children = (
+				F8EC9BAD1E9974B5009A48AF /* RegisterForAppViewController.swift */,
 				F8A2F4D51E412D21001A9427 /* AppDelegate.swift */,
 				F8A2F4D91E412D21001A9427 /* Main.storyboard */,
 				67AAC20D1E9736650094894B /* AddressViewController.swift */,
@@ -376,6 +379,7 @@
 				1721F9C51E9979C000C1C7EA /* MapsViewController.swift in Sources */,
 				F8A2F4D61E412D21001A9427 /* AppDelegate.swift in Sources */,
 				67AAC2041E97320B0094894B /* RegistrationPickerViewController.swift in Sources */,
+				F8EC9BAE1E9974B5009A48AF /* RegisterForAppViewController.swift in Sources */,
 				AA169E891E6F63D300CFDE9F /* LoginController.swift in Sources */,
 				67AAC2101E9737D20094894B /* BirthDateViewController.swift in Sources */,
 				67AAC20E1E9736650094894B /* AddressViewController.swift in Sources */,
