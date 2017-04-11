@@ -19,6 +19,7 @@
 		67AAC2101E9737D20094894B /* BirthDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC20F1E9737D20094894B /* BirthDateViewController.swift */; };
 		AA169E891E6F63D300CFDE9F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA169E881E6F63D300CFDE9F /* LoginController.swift */; };
 		F843C42A1E786BA0008075DC /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843C4291E786BA0008075DC /* RegistrationViewController.swift */; };
+		F84B5B7A1E9D56F200D31BC8 /* dlpSerial.txt in Resources */ = {isa = PBXBuildFile; fileRef = F84B5B791E9D56F200D31BC8 /* dlpSerial.txt */; };
 		F8A2F4D61E412D21001A9427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4D51E412D21001A9427 /* AppDelegate.swift */; };
 		F8A2F4DB1E412D21001A9427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A2F4D91E412D21001A9427 /* Main.storyboard */; };
 		F8A2F4DE1E412D21001A9427 /* Voter_Registration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4DC1E412D21001A9427 /* Voter_Registration.xcdatamodeld */; };
@@ -61,6 +62,7 @@
 		67AAC20F1E9737D20094894B /* BirthDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthDateViewController.swift; sourceTree = "<group>"; };
 		AA169E881E6F63D300CFDE9F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		F843C4291E786BA0008075DC /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		F84B5B791E9D56F200D31BC8 /* dlpSerial.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dlpSerial.txt; sourceTree = "<group>"; };
 		F8A2F4D21E412D21001A9427 /* Voter Registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voter Registration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A2F4D51E412D21001A9427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A2F4DA1E412D21001A9427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		F8A2F4D41E412D21001A9427 /* Voter Registration */ = {
 			isa = PBXGroup;
 			children = (
+				F84B5B791E9D56F200D31BC8 /* dlpSerial.txt */,
 				F8EC9BAF1E998389009A48AF /* libDriverLicenseParser.a */,
 				F8EC9BB01E998389009A48AF /* DriverLicenseParser.h */,
 				F8EC9BAD1E9974B5009A48AF /* RegisterForAppViewController.swift */,
@@ -283,6 +286,7 @@
 				F8A2F4E31E412D22001A9427 /* LaunchScreen.storyboard in Resources */,
 				F8A2F4E01E412D21001A9427 /* Assets.xcassets in Resources */,
 				F8A2F4DB1E412D21001A9427 /* Main.storyboard in Resources */,
+				F84B5B7A1E9D56F200D31BC8 /* dlpSerial.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
