@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1293,7 +1293,7 @@ bWF0aW9uIGlzIGNvcnJlY3QgdG8gdGhlIGJlc3QNb2YgeW91ciBrbm93bGVkZ2U
         <!--Map-->
         <scene sceneID="3LA-4a-Rau">
             <objects>
-                <viewController id="k4A-sD-Kal" userLabel="Map" sceneMemberID="viewController">
+                <viewController id="k4A-sD-Kal" userLabel="Map" customClass="MapsViewController" customModule="Voter_Registration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CqL-t3-Ftu"/>
                         <viewControllerLayoutGuide type="bottom" id="2JT-Jk-9Pj"/>
