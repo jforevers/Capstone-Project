@@ -52,7 +52,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wTR-c1-sEX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wTR-c1-sEX">
                                 <rect key="frame" x="54" y="425" width="150" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -63,13 +63,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit Changes"/>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIm-ku-6eV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIm-ku-6eV">
                                 <rect key="frame" x="55" y="113.5" width="149" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Update Street" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bul-zZ-6ut">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update Street" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bul-zZ-6ut">
                                 <rect key="frame" x="16" y="84.5" width="108" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -212,7 +212,7 @@
         <!--Register-->
         <scene sceneID="Soc-O6-KIn">
             <objects>
-                <navigationController title="Register" id="8SW-A8-IrL" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RegisterController" title="Register" id="8SW-A8-IrL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Register" image="Register" id="3NT-bh-0W6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hKk-Qh-aBK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1061,7 +1061,7 @@ bWF0aW9uIGlzIGNvcnJlY3QgdG8gdGhlIGJlc3QNb2YgeW91ciBrbm93bGVkZ2U
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DE0-HE-oyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1134" y="-374"/>
+            <point key="canvasLocation" x="-1135.2" y="-374.66266866566718"/>
         </scene>
         <!--Register For App View Controller-->
         <scene sceneID="AfI-iN-9P5">
@@ -1327,6 +1327,6 @@ bWF0aW9uIGlzIGNvcnJlY3QgdG8gdGhlIGJlc3QNb2YgeW91ciBrbm93bGVkZ2U
         <image name="User" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mdZ-jy-m2L"/>
+        <segue reference="lfK-l8-rSV"/>
     </inferredMetricsTieBreakers>
 </document>
