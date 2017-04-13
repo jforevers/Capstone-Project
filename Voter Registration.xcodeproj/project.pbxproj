@@ -30,7 +30,6 @@
 		F8A2F4F91E412D22001A9427 /* Voter_RegistrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4F81E412D22001A9427 /* Voter_RegistrationUITests.swift */; };
 		F8EC9BAA1E995B4F009A48AF /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC9BA91E995B4F009A48AF /* SignatureViewController.swift */; };
 		F8EC9BAE1E9974B5009A48AF /* RegisterForAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC9BAD1E9974B5009A48AF /* RegisterForAppViewController.swift */; };
-		F8EC9BB11E998389009A48AF /* libDriverLicenseParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8EC9BAF1E998389009A48AF /* libDriverLicenseParser.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -360,7 +359,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BEF09ED498BE33E3255DA970 /* [CP] Embed Pods Frameworks */ = {
