@@ -1,5 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
 target 'Voter Registration' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'PPBlinkID', '~>2.7.1'
 end
