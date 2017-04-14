@@ -270,8 +270,44 @@ class RegistrationPickerViewController: UIViewController, PPScanningDelegate {
             if (result is PPUsdlRecognizerResult) {
                 /** US drivers license was detected */
                 let usdlResult = result as! PPUsdlRecognizerResult
-                title = "USDL"
-                message = usdlResult.description
+                
+                let defaults = UserDefaults.standard
+                //SAVE USER INFO TO DEVICE
+                //Retrieve using defaults.object(forKey:"firstname")
+                
+                if let firstname = usdlResult.getField(kPPCustomerFirstName){
+                    defaults.set(firstname, forKey: "firstname")
+                }
+                if let lname = usdlResult.getField(kPPCustomerFamilyName){
+                    defaults.set(lname, forKey:"lname")
+                }
+                if let birthDate = usdlResult.getField(kPPDateOfBirth){
+                    defaults.set(birthDate, forKey: "date_of_birth")
+                }
+                if let gender = usdlResult.getField(kPPSex){
+                    defaults.set(gender, forKey: "gender")
+                }
+                if let street_address = usdlResult.getField(kPPAddressStreet){
+                    defaults.set(street_address, forKey: "street_address")
+                }
+                if let city_address = usdlResult.getField(kPPAddressCity){
+                    defaults.set(city_address, forKey: "city_address")
+                }
+                if let state_address = usdlResult.getField(kPPAddressJurisdictionCode){
+                    defaults.set(state_address, forKey: "state_address")
+                }
+                if let zipcode = usdlResult.getField(kPPAddressPostalCode){
+                    defaults.set(zipcode, forKey: "zipcode")
+                }
+                if let license_number = usdlResult.getField(kPPCustomerIdNumber){
+                    defaults.set(license_number, forKey: "license_number")
+                }
+                if let suffix = usdlResult.getField(kPPNameSuffix){
+                    defaults.set(suffix, forKey: "suffix")
+                }
+                if let middle_name = usdlResult.getField(kPPCustomerMiddleName){
+                    defaults.set(middle_name, forKey: "mname")
+                }
             }
             if (result is PPEudlRecognizerResult) {
                 /** EU drivers license was detected */
@@ -289,15 +325,17 @@ class RegistrationPickerViewController: UIViewController, PPScanningDelegate {
         
         // present the alert view with scanned results
         
-        let alertController: UIAlertController = UIAlertController.init(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let alertController: UIAlertController = UIAlertController.init(title: "Done", message: "Scanning Complete!", preferredStyle: UIAlertControllerStyle.alert)
         
         let okAction: UIAlertAction = UIAlertAction.init(title: "OK", style: UIAlertActionStyle.default,
                                                          handler: { (action) -> Void in
-                                                            self.dismiss(animated: true, completion: nil)
+                                                           self.dismiss(animated: true, completion: nil)
         })
         
         alertController.addAction(okAction)
         scanningViewController?.present(alertController, animated: true, completion: nil)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
+
     }
     
     func scanningViewController(_ scanningViewController: UIViewController?, didOutputMetadata metadata: PPMetadata) {
