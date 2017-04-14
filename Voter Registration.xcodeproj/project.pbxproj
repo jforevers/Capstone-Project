@@ -269,6 +269,7 @@
 				TargetAttributes = {
 					F8A2F4D11E412D21001A9427 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 85VHSC665T;
 						ProvisioningStyle = Automatic;
 					};
 					F8A2F4E81E412D22001A9427 = {
@@ -550,6 +551,7 @@
 			baseConfigurationReference = 8158844B38E34BB946FBF060 /* Pods-Voter Registration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85VHSC665T;
 				INFOPLIST_FILE = "Voter Registration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -599,6 +601,7 @@
 			baseConfigurationReference = 3C4F914B45FC1D404961B885 /* Pods-Voter Registration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85VHSC665T;
 				INFOPLIST_FILE = "Voter Registration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
