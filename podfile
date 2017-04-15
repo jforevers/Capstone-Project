@@ -4,4 +4,6 @@ target 'Voter Registration' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'PPBlinkID', '~>2.7.1'
+  use_frameworks!
+  pod "EPSignature"
 end

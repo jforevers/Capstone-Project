@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import EPSignature
 
-class SignatureViewController: UIViewController {
+class SignatureViewController: UIViewController, EPSignatureDelegate {
 
     
+    @IBOutlet weak var imgWidth: NSLayoutConstraint!
+    @IBOutlet weak var imgHeight: NSLayoutConstraint!
+    @IBOutlet weak var imgViewSignature: UIImageView!
     @IBOutlet weak var DateLabel: UILabel!
     var timer: Timer?
     let dateFormatter = DateFormatter()
@@ -42,5 +46,24 @@ class SignatureViewController: UIViewController {
     @IBAction func SubmitRegistration(_ sender: UIButton) {
     }
     
+    @IBAction func addSignature(_ sender: Any) {
+        let signatureVC = EPSignatureViewController(signatureDelegate: self, showsDate: true, showsSaveSignatureOption: true)
+        signatureVC.subtitleText = "I certify that everything is correct to the best of my knowledge"
+        signatureVC.title = "Signature"
+        let nav = UINavigationController(rootViewController: signatureVC)
+        present(nav, animated: true, completion: nil)
+    }
+    
+    func epSignature(_: EPSignatureViewController, didCancel error : NSError) {
+        print("User canceled")
+    }
+    
+    func epSignature(_: EPSignatureViewController, didSign signatureImage : UIImage, boundingRect: CGRect) {
+        print(signatureImage)
+        imgViewSignature.image = signatureImage
+        imgWidth.constant = boundingRect.size.width
+        imgHeight.constant = boundingRect.size.height
+    }
+
 
 }
