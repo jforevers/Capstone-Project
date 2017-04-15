@@ -15,7 +15,7 @@ class BirthDateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(loadlist), name: NSNotification.Name(rawValue: "load"), object: nil)
-
+        self.hideKeyboardWhenTappedAround() 
         // Do any additional setup after loading the view.
     }
 
