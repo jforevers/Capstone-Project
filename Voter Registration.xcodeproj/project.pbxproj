@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E003757E13F469978ABE568 /* Pods_Voter_Registration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08481FA3E1AEC41632069B15 /* Pods_Voter_Registration.framework */; };
 		1721F9C51E9979C000C1C7EA /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1721F9C41E9979C000C1C7EA /* MapsViewController.swift */; };
 		67AAC1FE1E930B110094894B /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC1FD1E930B110094894B /* ChangeNameViewController.swift */; };
 		67AAC2001E930DEE0094894B /* ChangeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC1FF1E930DEE0094894B /* ChangeProfileViewController.swift */; };
@@ -17,7 +18,6 @@
 		67AAC20C1E9736470094894B /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC20B1E9736470094894B /* NameViewController.swift */; };
 		67AAC20E1E9736650094894B /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC20D1E9736650094894B /* AddressViewController.swift */; };
 		67AAC2101E9737D20094894B /* BirthDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC20F1E9737D20094894B /* BirthDateViewController.swift */; };
-		7667F1B6412051F027336897 /* libPods-Voter Registration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A21A4C97C1F73EFC2D3D9E64 /* libPods-Voter Registration.a */; };
 		AA169E891E6F63D300CFDE9F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA169E881E6F63D300CFDE9F /* LoginController.swift */; };
 		F843C42A1E786BA0008075DC /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843C4291E786BA0008075DC /* RegistrationViewController.swift */; };
 		F84B5B7A1E9D56F200D31BC8 /* dlpSerial.txt in Resources */ = {isa = PBXBuildFile; fileRef = F84B5B791E9D56F200D31BC8 /* dlpSerial.txt */; };
@@ -50,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08481FA3E1AEC41632069B15 /* Pods_Voter_Registration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voter_Registration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1721F9C41E9979C000C1C7EA /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		3C4F914B45FC1D404961B885 /* Pods-Voter Registration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voter Registration.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voter Registration/Pods-Voter Registration.release.xcconfig"; sourceTree = "<group>"; };
 		67AAC1FD1E930B110094894B /* ChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		67AAC20D1E9736650094894B /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 		67AAC20F1E9737D20094894B /* BirthDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthDateViewController.swift; sourceTree = "<group>"; };
 		8158844B38E34BB946FBF060 /* Pods-Voter Registration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voter Registration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voter Registration/Pods-Voter Registration.debug.xcconfig"; sourceTree = "<group>"; };
-		A21A4C97C1F73EFC2D3D9E64 /* libPods-Voter Registration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Voter Registration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA169E881E6F63D300CFDE9F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		F843C4291E786BA0008075DC /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		F84B5B791E9D56F200D31BC8 /* dlpSerial.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dlpSerial.txt; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7667F1B6412051F027336897 /* libPods-Voter Registration.a in Frameworks */,
+				0E003757E13F469978ABE568 /* Pods_Voter_Registration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 		715540CF4F835567F4799223 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A21A4C97C1F73EFC2D3D9E64 /* libPods-Voter Registration.a */,
+				08481FA3E1AEC41632069B15 /* Pods_Voter_Registration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
