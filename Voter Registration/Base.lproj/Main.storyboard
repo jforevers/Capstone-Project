@@ -56,7 +56,7 @@
                                 <rect key="frame" x="54" y="425" width="150" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtE-c4-YwX">
                                 <rect key="frame" x="116" y="527" width="111" height="30"/>
@@ -920,7 +920,7 @@ cm1hdGlvbiBpcyBjb3JyZWN0IHRvIHRoZSBiZXN0DW9mIHlvdXIga25vd2xlZGdlA
                                 <rect key="frame" x="101" y="20" width="133" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ged-fP-lA6">
                                 <rect key="frame" x="242" y="25" width="40" height="21"/>
@@ -1052,7 +1052,7 @@ cm1hdGlvbiBpcyBjb3JyZWN0IHRvIHRoZSBiZXN0DW9mIHlvdXIga25vd2xlZGdlA
                                 <rect key="frame" x="16" y="248" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOz-cd-3I5">
                                 <rect key="frame" x="16" y="219" width="343" height="21"/>
@@ -1130,7 +1130,7 @@ cm1hdGlvbiBpcyBjb3JyZWN0IHRvIHRoZSBiZXN0DW9mIHlvdXIga25vd2xlZGdlA
                                 <rect key="frame" x="16" y="124" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mof-yG-WEd">
                                 <rect key="frame" x="16" y="95" width="343" height="21"/>
@@ -1366,6 +1366,6 @@ cm1hdGlvbiBpcyBjb3JyZWN0IHRvIHRoZSBiZXN0DW9mIHlvdXIga25vd2xlZGdlA
         <image name="User" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lfK-l8-rSV"/>
+        <segue reference="mdZ-jy-m2L"/>
     </inferredMetricsTieBreakers>
 </document>

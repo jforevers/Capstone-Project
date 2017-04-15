@@ -12,6 +12,7 @@ import GoogleMaps
 class MapsViewController: UIViewController {
 
     override func viewDidLoad() {
+        self.hideKeyboardWhenTappedAround() 
         //Creating a camera view for the maps page
         let camera = GMSCameraPosition.camera(withLatitude: 38.9638 , longitude: -92.3755, zoom: 4.0)
         let mapview = GMSMapView.map(withFrame: CGRect.zero, camera: camera)

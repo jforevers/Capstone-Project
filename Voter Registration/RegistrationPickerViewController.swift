@@ -29,7 +29,7 @@ class RegistrationPickerViewController: UIViewController, PPScanningDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hideKeyboardWhenTappedAround() 
         setView(newView: 0)
         // Do any additional setup after loading the view.
     }

@@ -24,6 +24,7 @@ class SignatureViewController: UIViewController, EPSignatureDelegate {
         dateFormatter.dateStyle = .medium
         let date = NSDate()
         DateLabel.text = dateFormatter.string(from: date as Date)
+        self.hideKeyboardWhenTappedAround() 
         // Do any additional setup after loading the view.
     }
 
