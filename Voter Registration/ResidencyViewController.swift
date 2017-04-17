@@ -16,7 +16,7 @@ class ResidencyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.hideKeyboardWhenTappedAround() 
         // Do any additional setup after loading the view.
     }
 
@@ -35,5 +35,6 @@ class ResidencyViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }

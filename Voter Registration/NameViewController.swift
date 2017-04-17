@@ -18,8 +18,9 @@ class NameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(loadlist), name: NSNotification.Name(rawValue: "load"), object: nil)
+        self.hideKeyboardWhenTappedAround() 
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,4 +39,23 @@ class NameViewController: UIViewController {
     }
     */
 
+    func loadlist(){
+        let defaults = UserDefaults.standard
+        //Retrieve saved data using defaults.object(forKey:"firstname")
+        if let lname = defaults.object(forKey: "lname"){
+            lname_text.text = lname as? String
+        }
+        if let fname = defaults.object(forKey: "firstname"){
+            fname_text.text = fname as? String
+        }
+        if let mname = defaults.object(forKey: "mname"){
+            mname_text.text = mname as? String
+        }
+        if let suffix = defaults.object(forKey: "suffix"){
+            suffix_text.text = suffix as? String
+        }
+        if let gender = defaults.object(forKey: "gender") as? Int{
+            gender_segment.selectedSegmentIndex = gender - 1
+        }
+    }
 }

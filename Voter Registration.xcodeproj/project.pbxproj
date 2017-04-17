@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E003757E13F469978ABE568 /* Pods_Voter_Registration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08481FA3E1AEC41632069B15 /* Pods_Voter_Registration.framework */; };
+		1721F9C51E9979C000C1C7EA /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1721F9C41E9979C000C1C7EA /* MapsViewController.swift */; };
 		67AAC1FE1E930B110094894B /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC1FD1E930B110094894B /* ChangeNameViewController.swift */; };
 		67AAC2001E930DEE0094894B /* ChangeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC1FF1E930DEE0094894B /* ChangeProfileViewController.swift */; };
 		67AAC2021E9310260094894B /* ChangeAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC2011E9310260094894B /* ChangeAddressViewController.swift */; };
@@ -18,6 +20,7 @@
 		67AAC2101E9737D20094894B /* BirthDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC20F1E9737D20094894B /* BirthDateViewController.swift */; };
 		AA169E891E6F63D300CFDE9F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA169E881E6F63D300CFDE9F /* LoginController.swift */; };
 		F843C42A1E786BA0008075DC /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843C4291E786BA0008075DC /* RegistrationViewController.swift */; };
+		F84B5B7A1E9D56F200D31BC8 /* dlpSerial.txt in Resources */ = {isa = PBXBuildFile; fileRef = F84B5B791E9D56F200D31BC8 /* dlpSerial.txt */; };
 		F8A2F4D61E412D21001A9427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4D51E412D21001A9427 /* AppDelegate.swift */; };
 		F8A2F4DB1E412D21001A9427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A2F4D91E412D21001A9427 /* Main.storyboard */; };
 		F8A2F4DE1E412D21001A9427 /* Voter_Registration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4DC1E412D21001A9427 /* Voter_Registration.xcdatamodeld */; };
@@ -25,6 +28,8 @@
 		F8A2F4E31E412D22001A9427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A2F4E11E412D22001A9427 /* LaunchScreen.storyboard */; };
 		F8A2F4EE1E412D22001A9427 /* Voter_RegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4ED1E412D22001A9427 /* Voter_RegistrationTests.swift */; };
 		F8A2F4F91E412D22001A9427 /* Voter_RegistrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4F81E412D22001A9427 /* Voter_RegistrationUITests.swift */; };
+		F8EC9BAA1E995B4F009A48AF /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC9BA91E995B4F009A48AF /* SignatureViewController.swift */; };
+		F8EC9BAE1E9974B5009A48AF /* RegisterForAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC9BAD1E9974B5009A48AF /* RegisterForAppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08481FA3E1AEC41632069B15 /* Pods_Voter_Registration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voter_Registration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1721F9C41E9979C000C1C7EA /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		3C4F914B45FC1D404961B885 /* Pods-Voter Registration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voter Registration.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voter Registration/Pods-Voter Registration.release.xcconfig"; sourceTree = "<group>"; };
 		67AAC1FD1E930B110094894B /* ChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
 		67AAC1FF1E930DEE0094894B /* ChangeProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeProfileViewController.swift; sourceTree = "<group>"; };
 		67AAC2011E9310260094894B /* ChangeAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeAddressViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +62,10 @@
 		67AAC20B1E9736470094894B /* NameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		67AAC20D1E9736650094894B /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 		67AAC20F1E9737D20094894B /* BirthDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthDateViewController.swift; sourceTree = "<group>"; };
+		8158844B38E34BB946FBF060 /* Pods-Voter Registration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voter Registration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voter Registration/Pods-Voter Registration.debug.xcconfig"; sourceTree = "<group>"; };
 		AA169E881E6F63D300CFDE9F /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		F843C4291E786BA0008075DC /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		F84B5B791E9D56F200D31BC8 /* dlpSerial.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dlpSerial.txt; sourceTree = "<group>"; };
 		F8A2F4D21E412D21001A9427 /* Voter Registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voter Registration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A2F4D51E412D21001A9427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A2F4DA1E412D21001A9427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +79,10 @@
 		F8A2F4F41E412D22001A9427 /* Voter RegistrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voter RegistrationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A2F4F81E412D22001A9427 /* Voter_RegistrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voter_RegistrationUITests.swift; sourceTree = "<group>"; };
 		F8A2F4FA1E412D22001A9427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8EC9BA91E995B4F009A48AF /* SignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		F8EC9BAD1E9974B5009A48AF /* RegisterForAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterForAppViewController.swift; sourceTree = "<group>"; };
+		F8EC9BAF1E998389009A48AF /* libDriverLicenseParser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDriverLicenseParser.a; sourceTree = "<group>"; };
+		F8EC9BB01E998389009A48AF /* DriverLicenseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverLicenseParser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E003757E13F469978ABE568 /* Pods_Voter_Registration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +111,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B63C703FE47A5050EEA63CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8158844B38E34BB946FBF060 /* Pods-Voter Registration.debug.xcconfig */,
+				3C4F914B45FC1D404961B885 /* Pods-Voter Registration.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		715540CF4F835567F4799223 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08481FA3E1AEC41632069B15 /* Pods_Voter_Registration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F8A2F4C91E412D21001A9427 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +135,8 @@
 				F8A2F4EC1E412D22001A9427 /* Voter RegistrationTests */,
 				F8A2F4F71E412D22001A9427 /* Voter RegistrationUITests */,
 				F8A2F4D31E412D21001A9427 /* Products */,
+				2B63C703FE47A5050EEA63CE /* Pods */,
+				715540CF4F835567F4799223 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +153,10 @@
 		F8A2F4D41E412D21001A9427 /* Voter Registration */ = {
 			isa = PBXGroup;
 			children = (
+				F84B5B791E9D56F200D31BC8 /* dlpSerial.txt */,
+				F8EC9BAF1E998389009A48AF /* libDriverLicenseParser.a */,
+				F8EC9BB01E998389009A48AF /* DriverLicenseParser.h */,
+				F8EC9BAD1E9974B5009A48AF /* RegisterForAppViewController.swift */,
 				F8A2F4D51E412D21001A9427 /* AppDelegate.swift */,
 				F8A2F4D91E412D21001A9427 /* Main.storyboard */,
 				67AAC20D1E9736650094894B /* AddressViewController.swift */,
@@ -136,6 +174,8 @@
 				67AAC2091E9735F40094894B /* ResidencyViewController.swift */,
 				67AAC20B1E9736470094894B /* NameViewController.swift */,
 				67AAC20F1E9737D20094894B /* BirthDateViewController.swift */,
+				F8EC9BA91E995B4F009A48AF /* SignatureViewController.swift */,
+				1721F9C41E9979C000C1C7EA /* MapsViewController.swift */,
 			);
 			path = "Voter Registration";
 			sourceTree = "<group>";
@@ -165,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8A2F4FD1E412D22001A9427 /* Build configuration list for PBXNativeTarget "Voter Registration" */;
 			buildPhases = (
+				AA9A531A2F6484DCA83C2064 /* [CP] Check Pods Manifest.lock */,
 				F8A2F4CE1E412D21001A9427 /* Sources */,
 				F8A2F4CF1E412D21001A9427 /* Frameworks */,
 				F8A2F4D01E412D21001A9427 /* Resources */,
+				BEF09ED498BE33E3255DA970 /* [CP] Embed Pods Frameworks */,
+				1BE798FD7D20D1A323E25D07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,6 +269,7 @@
 				TargetAttributes = {
 					F8A2F4D11E412D21001A9427 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 85VHSC665T;
 						ProvisioningStyle = Automatic;
 					};
 					F8A2F4E81E412D22001A9427 = {
@@ -268,6 +312,7 @@
 				F8A2F4E31E412D22001A9427 /* LaunchScreen.storyboard in Resources */,
 				F8A2F4E01E412D21001A9427 /* Assets.xcassets in Resources */,
 				F8A2F4DB1E412D21001A9427 /* Main.storyboard in Resources */,
+				F84B5B7A1E9D56F200D31BC8 /* dlpSerial.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,13 +332,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BE798FD7D20D1A323E25D07 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voter Registration/Pods-Voter Registration-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA9A531A2F6484DCA83C2064 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BEF09ED498BE33E3255DA970 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voter Registration/Pods-Voter Registration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8A2F4CE1E412D21001A9427 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1721F9C51E9979C000C1C7EA /* MapsViewController.swift in Sources */,
 				F8A2F4D61E412D21001A9427 /* AppDelegate.swift in Sources */,
 				67AAC2041E97320B0094894B /* RegistrationPickerViewController.swift in Sources */,
+				F8EC9BAE1E9974B5009A48AF /* RegisterForAppViewController.swift in Sources */,
 				AA169E891E6F63D300CFDE9F /* LoginController.swift in Sources */,
 				67AAC2101E9737D20094894B /* BirthDateViewController.swift in Sources */,
 				67AAC20E1E9736650094894B /* AddressViewController.swift in Sources */,
@@ -303,6 +398,7 @@
 				67AAC20C1E9736470094894B /* NameViewController.swift in Sources */,
 				67AAC1FE1E930B110094894B /* ChangeNameViewController.swift in Sources */,
 				67AAC20A1E9735F40094894B /* ResidencyViewController.swift in Sources */,
+				F8EC9BAA1E995B4F009A48AF /* SignatureViewController.swift in Sources */,
 				F843C42A1E786BA0008075DC /* RegistrationViewController.swift in Sources */,
 				F8A2F4DE1E412D21001A9427 /* Voter_Registration.xcdatamodeld in Sources */,
 			);
@@ -452,10 +548,48 @@
 		};
 		F8A2F4FE1E412D22001A9427 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8158844B38E34BB946FBF060 /* Pods-Voter Registration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85VHSC665T;
 				INFOPLIST_FILE = "Voter Registration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"GoogleMapsBase\"",
+					"-framework",
+					"\"GoogleMapsCore\"",
+					"-framework",
+					"\"GooglePlaces\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "none.Voter-Registration";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -464,10 +598,48 @@
 		};
 		F8A2F4FF1E412D22001A9427 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4F914B45FC1D404961B885 /* Pods-Voter Registration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85VHSC665T;
 				INFOPLIST_FILE = "Voter Registration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"GoogleMapsBase\"",
+					"-framework",
+					"\"GoogleMapsCore\"",
+					"-framework",
+					"\"GooglePlaces\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "none.Voter-Registration";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

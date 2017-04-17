@@ -26,6 +26,7 @@ class ChangeProfileViewController: UIViewController {
        // takeTwo.selectedSegmentIndex = 0
         setSelectedView()
         // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround() 
     }
 
     override func didReceiveMemoryWarning() {
