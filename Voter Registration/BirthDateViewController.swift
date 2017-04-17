@@ -10,6 +10,11 @@ import UIKit
 
 class BirthDateViewController: UIViewController {
 
+    @IBOutlet weak var SSN: UITextField!
+    @IBOutlet weak var bDate: UIDatePicker!
+    @IBOutlet weak var bPlace: UITextField!
+    @IBOutlet weak var phone: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

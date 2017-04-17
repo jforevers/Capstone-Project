@@ -10,6 +10,12 @@ import UIKit
 
 class NameViewController: UIViewController {
 
+    @IBOutlet weak var fname: UITextField!
+    @IBOutlet weak var midname: UITextField!
+    @IBOutlet weak var lname: UITextField!
+    @IBOutlet weak var suffix: UITextField!
+    @IBOutlet weak var gender: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

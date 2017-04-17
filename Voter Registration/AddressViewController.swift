@@ -10,6 +10,14 @@ import UIKit
 
 class AddressViewController: UIViewController {
 
+    @IBOutlet weak var street: UITextField!
+    @IBOutlet weak var city: UITextField!
+    @IBOutlet weak var state: UITextField!
+    @IBOutlet weak var zip: UITextField!
+    @IBOutlet weak var mail: UISegmentedControl!
+    @IBOutlet weak var rural: UISegmentedControl!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -167,10 +167,6 @@
                                     <segment title="Female"/>
                                 </segments>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l67-TU-UxH">
-                                <rect key="frame" x="113" y="455" width="117" height="30"/>
-                                <state key="normal" title="Submit Changes"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5E-Gt-nnF">
                                 <rect key="frame" x="16" y="91" width="112" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -184,13 +180,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="2bq-3d-Nzd" secondAttribute="trailing" constant="116" id="8M9-z0-2dE"/>
                             <constraint firstItem="NM8-qX-v6H" firstAttribute="top" secondItem="44A-Ce-Hpv" secondAttribute="bottom" constant="21" id="8fg-GC-F27"/>
                             <constraint firstItem="44A-Ce-Hpv" firstAttribute="leading" secondItem="jp2-qZ-Xf2" secondAttribute="leadingMargin" id="AGI-Yf-Ad6"/>
-                            <constraint firstItem="hAP-Sh-DuZ" firstAttribute="top" secondItem="l67-TU-UxH" secondAttribute="bottom" constant="33" id="EBK-XY-Rdo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5oM-UC-NfF" secondAttribute="trailing" constant="97" id="GGu-kw-z6d"/>
                             <constraint firstItem="5Uf-0v-mGc" firstAttribute="leading" secondItem="jp2-qZ-Xf2" secondAttribute="leadingMargin" constant="124" id="IjS-nn-jdz"/>
                             <constraint firstItem="44A-Ce-Hpv" firstAttribute="top" secondItem="2bq-3d-Nzd" secondAttribute="bottom" constant="32" id="P6i-AL-aDu"/>
-                            <constraint firstItem="l67-TU-UxH" firstAttribute="leading" secondItem="jp2-qZ-Xf2" secondAttribute="leadingMargin" constant="97" id="Rzc-t0-wPC"/>
                             <constraint firstItem="5oM-UC-NfF" firstAttribute="top" secondItem="5Uf-0v-mGc" secondAttribute="bottom" constant="8" id="VLt-6i-XgP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="l67-TU-UxH" secondAttribute="trailing" constant="97" id="YQz-9N-s3H"/>
                             <constraint firstItem="5oM-UC-NfF" firstAttribute="leading" secondItem="jp2-qZ-Xf2" secondAttribute="leadingMargin" constant="97" id="ZZG-tU-hFe"/>
                             <constraint firstItem="h5E-Gt-nnF" firstAttribute="leading" secondItem="jp2-qZ-Xf2" secondAttribute="leadingMargin" id="ZgP-Hd-j8J"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h5E-Gt-nnF" secondAttribute="trailing" constant="199" id="dtb-44-Sbc"/>
@@ -203,7 +196,6 @@
                             <constraint firstItem="5Uf-0v-mGc" firstAttribute="top" secondItem="0Yb-1V-f2x" secondAttribute="bottom" constant="27" id="sOz-w1-wxK"/>
                             <constraint firstItem="h5E-Gt-nnF" firstAttribute="top" secondItem="CAW-Xv-Caj" secondAttribute="bottom" constant="91" id="sZA-zr-9JV"/>
                             <constraint firstItem="NM8-qX-v6H" firstAttribute="leading" secondItem="jp2-qZ-Xf2" secondAttribute="leadingMargin" constant="24" id="sb7-Mv-M9V"/>
-                            <constraint firstItem="l67-TU-UxH" firstAttribute="top" secondItem="5oM-UC-NfF" secondAttribute="bottom" constant="20" id="sw9-U4-Oat"/>
                             <constraint firstItem="2bq-3d-Nzd" firstAttribute="leading" secondItem="jp2-qZ-Xf2" secondAttribute="leadingMargin" constant="24" id="thR-Cs-arM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5Uf-0v-mGc" secondAttribute="trailing" constant="125" id="thw-vY-yir"/>
                             <constraint firstItem="2bq-3d-Nzd" firstAttribute="top" secondItem="h5E-Gt-nnF" secondAttribute="bottom" constant="8" id="yOP-I3-xtP"/>
@@ -262,7 +254,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="679-cz-azN" userLabel="Residency">
                                 <rect key="frame" x="16" y="146" width="343" height="472"/>
                                 <connections>
-                                    <segue destination="L79-9z-jvt" kind="embed" id="DPO-Jd-eCO"/>
+                                    <segue destination="L79-9z-jvt" kind="embed" identifier="residency" id="DPO-Jd-eCO"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flk-xi-1gk">
@@ -275,25 +267,25 @@
                             <containerView hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXg-0P-hfg" userLabel="NameView">
                                 <rect key="frame" x="16" y="146" width="343" height="472"/>
                                 <connections>
-                                    <segue destination="bBZ-f9-3vG" kind="embed" id="tDa-8j-ZFx"/>
+                                    <segue destination="bBZ-f9-3vG" kind="embed" identifier="name" id="tDa-8j-ZFx"/>
                                 </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdX-x0-V78" userLabel="AddressView">
                                 <rect key="frame" x="16" y="146" width="343" height="472"/>
                                 <connections>
-                                    <segue destination="8Al-8w-aEg" kind="embed" id="QPN-tO-F2B"/>
+                                    <segue destination="8Al-8w-aEg" kind="embed" identifier="address" id="QPN-tO-F2B"/>
                                 </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olv-qb-RIV" userLabel="ruralView">
                                 <rect key="frame" x="16" y="146" width="343" height="472"/>
                                 <connections>
-                                    <segue destination="i0q-ry-uP3" kind="embed" id="wY2-vv-tHw"/>
+                                    <segue destination="i0q-ry-uP3" kind="embed" identifier="rural" id="wY2-vv-tHw"/>
                                 </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgu-Mp-kJS" userLabel="birthDateView">
                                 <rect key="frame" x="16" y="146" width="343" height="472"/>
                                 <connections>
-                                    <segue destination="nxI-th-Rh8" kind="embed" id="ANA-nK-rHJ"/>
+                                    <segue destination="nxI-th-Rh8" kind="embed" identifier="ssn" id="ANA-nK-rHJ"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -410,6 +402,11 @@ of America?</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="Register" id="Mcl-Tc-JKq"/>
                     <navigationItem key="navigationItem" id="qXa-US-r5H"/>
+                    <connections>
+                        <outlet property="age" destination="rpj-ss-hUT" id="g2f-y9-7fQ"/>
+                        <outlet property="citizen" destination="FTj-vB-bUL" id="K4n-Ly-oCP"/>
+                        <outlet property="resident" destination="J6J-yB-gER" id="VMq-xT-QeT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PY7-hi-hqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -523,6 +520,13 @@ of America?</string>
                             <constraint firstItem="iFU-nE-8yH" firstAttribute="trailing" secondItem="93p-wj-WdR" secondAttribute="trailingMargin" id="xZ7-de-bdB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fname" destination="K3T-2R-Bde" id="DF5-5V-CJz"/>
+                        <outlet property="gender" destination="1ax-F3-7fl" id="81c-IP-ziU"/>
+                        <outlet property="lname" destination="pPG-C0-Qzi" id="qnq-4u-2Ie"/>
+                        <outlet property="midname" destination="iFU-nE-8yH" id="L1Y-PW-t4G"/>
+                        <outlet property="suffix" destination="BaL-50-wdu" id="OeY-7t-X3z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzs-Nr-0ey" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -655,10 +659,18 @@ of America?</string>
                             <constraint firstItem="YIi-jR-LMl" firstAttribute="leading" secondItem="jMo-s7-Ipv" secondAttribute="leadingMargin" constant="63" id="z77-eJ-UVH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="city" destination="Flu-LW-85k" id="M4T-g8-MbO"/>
+                        <outlet property="mail" destination="Qjl-hd-imE" id="643-BL-imV"/>
+                        <outlet property="rural" destination="bU3-VQ-frh" id="hc0-nK-AJv"/>
+                        <outlet property="state" destination="Eal-Fj-J1P" id="UDi-ih-Ben"/>
+                        <outlet property="street" destination="ueW-Dk-Qoq" id="g44-4f-mon"/>
+                        <outlet property="zip" destination="nw5-nB-ibe" id="Zmu-VH-o82"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BXM-jY-vxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3380" y="-2007"/>
+            <point key="canvasLocation" x="3370" y="-2073"/>
         </scene>
         <!--SSN-->
         <scene sceneID="sxY-9e-sEf">
@@ -751,6 +763,12 @@ of America?</string>
                             <constraint firstAttribute="trailingMargin" secondItem="xNX-hY-ZXk" secondAttribute="trailing" constant="40" id="zm4-f3-hi6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="SSN" destination="At9-Dv-X5v" id="S0k-SU-A7b"/>
+                        <outlet property="bDate" destination="aEI-vw-n3J" id="ckf-JD-4fr"/>
+                        <outlet property="bPlace" destination="74m-JV-eNZ" id="Kwi-AA-qgU"/>
+                        <outlet property="phone" destination="ETw-V7-bPn" id="UOC-vJ-G47"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lMN-zS-BAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -777,6 +795,9 @@ of America?</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9W-Ab-FRY">
                                 <rect key="frame" x="136" y="577" width="103" height="30"/>
                                 <state key="normal" title="SUBMIT"/>
+                                <connections>
+                                    <segue destination="k4A-sD-Kal" kind="show" id="m8V-q9-yaq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRL-vv-v8z" userLabel="Today_date">
                                 <rect key="frame" x="47" y="167" width="281" height="21"/>
@@ -934,6 +955,13 @@ bWF0aW9uIGlzIGNvcnJlY3QgdG8gdGhlIGJlc3QNb2YgeW91ciBrbm93bGVkZ2U
                             <constraint firstItem="meI-pS-HFo" firstAttribute="top" secondItem="Ue9-4e-uEr" secondAttribute="bottom" constant="8" id="zzx-h6-Kxr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="landmark" destination="IZ9-zX-e7M" id="0gc-l0-lsl"/>
+                        <outlet property="miles" destination="0bx-dA-Oea" id="vag-XN-aef"/>
+                        <outlet property="neigbors" destination="meI-pS-HFo" id="gcF-iU-INk"/>
+                        <outlet property="rCity" destination="H2B-dx-LpO" id="roI-Ba-xgc"/>
+                        <outlet property="section" destination="CkI-ht-uZW" id="swb-nC-LeN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gp-5x-1gL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1171,4 +1199,7 @@ bWF0aW9uIGlzIGNvcnJlY3QgdG8gdGhlIGJlc3QNb2YgeW91ciBrbm93bGVkZ2U
             <point key="canvasLocation" x="1281" y="863"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9sG-Tk-483"/>
+    </inferredMetricsTieBreakers>
 </document>

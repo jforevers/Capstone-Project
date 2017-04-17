@@ -10,6 +10,12 @@ import UIKit
 
 class RuralViewController: UIViewController {
 
+    @IBOutlet weak var miles: UITextField!
+    @IBOutlet weak var rCity: UIPickerView!
+    @IBOutlet weak var landmark: UITextField!
+    @IBOutlet weak var section: UITextField!
+    @IBOutlet weak var neigbors: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
