@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d19-3S-Ud7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d19-3S-Ud7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -254,7 +254,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="679-cz-azN" userLabel="Residency">
                                 <rect key="frame" x="16" y="146" width="343" height="472"/>
                                 <connections>
-                                    <segue destination="L79-9z-jvt" kind="embed" id="DPO-Jd-eCO"/>
+                                    <segue destination="L79-9z-jvt" kind="embed" identifier="residency" id="DPO-Jd-eCO"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flk-xi-1gk">
@@ -267,25 +267,25 @@
                             <containerView hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXg-0P-hfg" userLabel="NameView">
                                 <rect key="frame" x="16" y="146" width="343" height="472"/>
                                 <connections>
-                                    <segue destination="bBZ-f9-3vG" kind="embed" id="tDa-8j-ZFx"/>
+                                    <segue destination="bBZ-f9-3vG" kind="embed" identifier="name" id="tDa-8j-ZFx"/>
                                 </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdX-x0-V78" userLabel="AddressView">
                                 <rect key="frame" x="16" y="146" width="343" height="472"/>
                                 <connections>
-                                    <segue destination="8Al-8w-aEg" kind="embed" id="QPN-tO-F2B"/>
+                                    <segue destination="8Al-8w-aEg" kind="embed" identifier="address" id="QPN-tO-F2B"/>
                                 </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olv-qb-RIV" userLabel="ruralView">
                                 <rect key="frame" x="16" y="146" width="343" height="472"/>
                                 <connections>
-                                    <segue destination="i0q-ry-uP3" kind="embed" id="wY2-vv-tHw"/>
+                                    <segue destination="i0q-ry-uP3" kind="embed" identifier="rural" id="wY2-vv-tHw"/>
                                 </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgu-Mp-kJS" userLabel="birthDateView">
                                 <rect key="frame" x="16" y="146" width="343" height="472"/>
                                 <connections>
-                                    <segue destination="nxI-th-Rh8" kind="embed" id="ANA-nK-rHJ"/>
+                                    <segue destination="nxI-th-Rh8" kind="embed" identifier="ssn" id="ANA-nK-rHJ"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTl-9X-KUN">
@@ -411,6 +411,11 @@ of America?</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="Register" id="Mcl-Tc-JKq"/>
                     <navigationItem key="navigationItem" id="qXa-US-r5H"/>
+                    <connections>
+                        <outlet property="age" destination="rpj-ss-hUT" id="g2f-y9-7fQ"/>
+                        <outlet property="citizen" destination="FTj-vB-bUL" id="K4n-Ly-oCP"/>
+                        <outlet property="resident" destination="J6J-yB-gER" id="VMq-xT-QeT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PY7-hi-hqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -664,15 +669,17 @@ of America?</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="address_city" destination="Flu-LW-85k" id="276-ks-FrX"/>
-                        <outlet property="address_state" destination="Eal-Fj-J1P" id="cFW-7W-rVF"/>
-                        <outlet property="address_street" destination="ueW-Dk-Qoq" id="kI9-ht-2VT"/>
-                        <outlet property="address_zipcode" destination="nw5-nB-ibe" id="Rde-ui-o85"/>
+                        <outlet property="city" destination="Flu-LW-85k" id="M4T-g8-MbO"/>
+                        <outlet property="mail" destination="Qjl-hd-imE" id="643-BL-imV"/>
+                        <outlet property="rural" destination="bU3-VQ-frh" id="hc0-nK-AJv"/>
+                        <outlet property="state" destination="Eal-Fj-J1P" id="UDi-ih-Ben"/>
+                        <outlet property="street" destination="ueW-Dk-Qoq" id="g44-4f-mon"/>
+                        <outlet property="zip" destination="nw5-nB-ibe" id="Zmu-VH-o82"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BXM-jY-vxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3380" y="-2007"/>
+            <point key="canvasLocation" x="3370" y="-2073"/>
         </scene>
         <!--SSN-->
         <scene sceneID="sxY-9e-sEf">
@@ -766,7 +773,10 @@ of America?</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="DOBPicker" destination="aEI-vw-n3J" id="cll-YS-bsD"/>
+                        <outlet property="SSN" destination="At9-Dv-X5v" id="S0k-SU-A7b"/>
+                        <outlet property="bDate" destination="aEI-vw-n3J" id="ckf-JD-4fr"/>
+                        <outlet property="bPlace" destination="74m-JV-eNZ" id="Kwi-AA-qgU"/>
+                        <outlet property="phone" destination="ETw-V7-bPn" id="UOC-vJ-G47"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lMN-zS-BAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -984,6 +994,12 @@ cm1hdGlvbiBpcyBjb3JyZWN0IHRvIHRoZSBiZXN0DW9mIHlvdXIga25vd2xlZGdlA
                             <constraint firstItem="Ue9-4e-uEr" firstAttribute="leading" secondItem="BII-iK-Las" secondAttribute="leading" constant="3" id="su6-LI-GtQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="landmark" destination="IZ9-zX-e7M" id="0gc-l0-lsl"/>
+                        <outlet property="miles" destination="0bx-dA-Oea" id="vag-XN-aef"/>
+                        <outlet property="neigbors" destination="meI-pS-HFo" id="gcF-iU-INk"/>
+                        <outlet property="section" destination="CkI-ht-uZW" id="swb-nC-LeN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gp-5x-1gL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

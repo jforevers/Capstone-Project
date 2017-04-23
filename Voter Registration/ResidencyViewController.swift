@@ -9,6 +9,10 @@
 import UIKit
 
 class ResidencyViewController: UIViewController {
+    
+    @IBOutlet weak var citizen: UISwitch!
+    @IBOutlet weak var resident: UISwitch!
+    @IBOutlet weak var age: UISwitch!
 
     override func viewDidLoad() {
         super.viewDidLoad()

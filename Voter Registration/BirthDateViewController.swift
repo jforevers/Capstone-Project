@@ -10,7 +10,10 @@ import UIKit
 
 class BirthDateViewController: UIViewController {
 
-    @IBOutlet weak var DOBPicker: UIDatePicker!
+    @IBOutlet weak var SSN: UITextField!
+    @IBOutlet weak var bDate: UIDatePicker!
+    @IBOutlet weak var bPlace: UITextField!
+    @IBOutlet weak var phone: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +58,7 @@ class BirthDateViewController: UIViewController {
         dateComponents.day = Int(date)
         let DOB = userCalendar.date(from: dateComponents)!
 
-        DOBPicker.setDate(DOB, animated: false)
+        bDate.setDate(DOB, animated: false)
     }
 
 }
