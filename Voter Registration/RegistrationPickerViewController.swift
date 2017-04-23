@@ -80,13 +80,13 @@ class RegistrationPickerViewController: UIViewController, PPScanningDelegate {
             }
         //name
         case 1:
-            if (namView?.fname.text?.isEmpty)! {
+            if (namView?.fname_text.text?.isEmpty)! {
                 let alert = UIAlertController(title: "First Name", message: "Please enter your first name.", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
                 return false
             }
-            else if (namView?.lname.text?.isEmpty)! {
+            else if (namView?.lname_text.text?.isEmpty)! {
                 let alert = UIAlertController(title: "Last Name", message: "Please enter your last name.", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
@@ -235,7 +235,19 @@ class RegistrationPickerViewController: UIViewController, PPScanningDelegate {
         }
         
     }
- 
+    
+    
+    @IBAction func ScanLicenseButton(_ sender: AnyObject) {
+        
+        /** Instantiate the scanning coordinator */
+        let error: NSErrorPointer = nil
+        let coordinator = coordinatorWithError(error: error)
+        
+        /** If scanning isn't supported, present an error */
+        if coordinator == nil {
+            let messageString: String = (error!.pointee?.localizedDescription) ?? ""
+            let alertController = UIAlertController(title: "Warning", message: messageString, preferredStyle: .alert)
+            let OKAction = UIAlertAction(title: "Ok", style: .cancel) { _ in }
 
             alertController.addAction(OKAction)
             

@@ -58,7 +58,7 @@ class BirthDateViewController: UIViewController {
         dateComponents.day = Int(date)
         let DOB = userCalendar.date(from: dateComponents)!
 
-        DOBPicker.setDate(DOB, animated: false)
+        bDate.setDate(DOB, animated: false)
     }
 
 }

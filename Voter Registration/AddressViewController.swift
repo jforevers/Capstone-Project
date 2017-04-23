@@ -47,16 +47,16 @@ class AddressViewController: UIViewController {
         let defaults = UserDefaults.standard
         //Retrieve saved data using defaults.object(forKey:"firstname")
         if let street_name = defaults.object(forKey: "street_address"){
-            address_street.text = street_name as? String
+            street.text = street_name as? String
         }
         if let city = defaults.object(forKey: "city_address"){
-            address_city.text = city as? String
+            self.city.text = city as? String
         }
         if let zipcode = defaults.object(forKey: "zipcode"){
-            address_zipcode.text = zipcode as? String
+            zip.text = zipcode as? String
         }
         if let state = defaults.object(forKey: "state_address"){
-            address_state.text = state as? String
+            self.state.text = state as? String
         }
     }
 

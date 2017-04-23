@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d19-3S-Ud7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d19-3S-Ud7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -530,11 +530,11 @@ of America?</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="fname" destination="K3T-2R-Bde" id="DF5-5V-CJz"/>
-                        <outlet property="gender" destination="1ax-F3-7fl" id="81c-IP-ziU"/>
-                        <outlet property="lname" destination="pPG-C0-Qzi" id="qnq-4u-2Ie"/>
-                        <outlet property="midname" destination="iFU-nE-8yH" id="L1Y-PW-t4G"/>
-                        <outlet property="suffix" destination="BaL-50-wdu" id="OeY-7t-X3z"/>
+                        <outlet property="fname_text" destination="K3T-2R-Bde" id="jOA-at-Csi"/>
+                        <outlet property="gender_segment" destination="1ax-F3-7fl" id="bYl-9L-XAi"/>
+                        <outlet property="lname_text" destination="pPG-C0-Qzi" id="DTN-dU-ekB"/>
+                        <outlet property="mname_text" destination="iFU-nE-8yH" id="Pcu-xo-bT6"/>
+                        <outlet property="suffix_text" destination="BaL-50-wdu" id="Wf8-Jr-qvC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzs-Nr-0ey" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -805,7 +805,7 @@ of America?</string>
                                 <rect key="frame" x="136" y="562" width="103" height="30"/>
                                 <state key="normal" title="SUBMIT"/>
                                 <connections>
-                                    <segue destination="k4A-sD-Kal" kind="show" id="m8V-q9-yaq"/>
+                                    <action selector="SubmitRegistration:" destination="yLs-5x-AHm" eventType="touchUpInside" id="5Eq-cv-bJ0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRL-vv-v8z" userLabel="Today_date">
@@ -998,7 +998,6 @@ cm1hdGlvbiBpcyBjb3JyZWN0IHRvIHRoZSBiZXN0DW9mIHlvdXIga25vd2xlZGdlA
                         <outlet property="landmark" destination="IZ9-zX-e7M" id="0gc-l0-lsl"/>
                         <outlet property="miles" destination="0bx-dA-Oea" id="vag-XN-aef"/>
                         <outlet property="neigbors" destination="meI-pS-HFo" id="gcF-iU-INk"/>
-                        <outlet property="rCity" destination="H2B-dx-LpO" id="roI-Ba-xgc"/>
                         <outlet property="section" destination="CkI-ht-uZW" id="swb-nC-LeN"/>
                     </connections>
                 </viewController>
@@ -1377,7 +1376,12 @@ cm1hdGlvbiBpcyBjb3JyZWN0IHRvIHRoZSBiZXN0DW9mIHlvdXIga25vd2xlZGdlA
             <point key="canvasLocation" x="1281" y="863"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Globe" width="25" height="25"/>
+        <image name="Register" width="25" height="25"/>
+        <image name="User" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9sG-Tk-483"/>
+        <segue reference="mdZ-jy-m2L"/>
     </inferredMetricsTieBreakers>
 </document>

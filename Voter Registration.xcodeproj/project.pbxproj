@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E003757E13F469978ABE568 /* Pods_Voter_Registration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08481FA3E1AEC41632069B15 /* Pods_Voter_Registration.framework */; };
 		1721F9C51E9979C000C1C7EA /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1721F9C41E9979C000C1C7EA /* MapsViewController.swift */; };
 		67AAC1FE1E930B110094894B /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC1FD1E930B110094894B /* ChangeNameViewController.swift */; };
 		67AAC2001E930DEE0094894B /* ChangeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC1FF1E930DEE0094894B /* ChangeProfileViewController.swift */; };
@@ -19,6 +18,7 @@
 		67AAC20E1E9736650094894B /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC20D1E9736650094894B /* AddressViewController.swift */; };
 		67AAC2101E9737D20094894B /* BirthDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AAC20F1E9737D20094894B /* BirthDateViewController.swift */; };
 		AA169E891E6F63D300CFDE9F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA169E881E6F63D300CFDE9F /* LoginController.swift */; };
+		E9453198B0958045D82C07B9 /* Pods_Voter_Registration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB03BE5C58F170CD4597E35C /* Pods_Voter_Registration.framework */; };
 		F843C42A1E786BA0008075DC /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843C4291E786BA0008075DC /* RegistrationViewController.swift */; };
 		F84B5B7A1E9D56F200D31BC8 /* dlpSerial.txt in Resources */ = {isa = PBXBuildFile; fileRef = F84B5B791E9D56F200D31BC8 /* dlpSerial.txt */; };
 		F8A2F4D61E412D21001A9427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A2F4D51E412D21001A9427 /* AppDelegate.swift */; };
@@ -50,7 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08481FA3E1AEC41632069B15 /* Pods_Voter_Registration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voter_Registration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1721F9C41E9979C000C1C7EA /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		3C4F914B45FC1D404961B885 /* Pods-Voter Registration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voter Registration.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voter Registration/Pods-Voter Registration.release.xcconfig"; sourceTree = "<group>"; };
 		67AAC1FD1E930B110094894B /* ChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		F8EC9BAD1E9974B5009A48AF /* RegisterForAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterForAppViewController.swift; sourceTree = "<group>"; };
 		F8EC9BAF1E998389009A48AF /* libDriverLicenseParser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDriverLicenseParser.a; sourceTree = "<group>"; };
 		F8EC9BB01E998389009A48AF /* DriverLicenseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverLicenseParser.h; sourceTree = "<group>"; };
+		FB03BE5C58F170CD4597E35C /* Pods_Voter_Registration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voter_Registration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E003757E13F469978ABE568 /* Pods_Voter_Registration.framework in Frameworks */,
+				E9453198B0958045D82C07B9 /* Pods_Voter_Registration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 		715540CF4F835567F4799223 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				08481FA3E1AEC41632069B15 /* Pods_Voter_Registration.framework */,
+				FB03BE5C58F170CD4597E35C /* Pods_Voter_Registration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
