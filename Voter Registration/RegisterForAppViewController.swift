@@ -39,7 +39,57 @@ class RegisterForAppViewController: UIViewController {
         //attempt to validate with database
         //attemptLogin(email: email.text!, password: password.text!)
         
-        performSegue(withIdentifier: "registrationComplete", sender: nil)
+        var request = URLRequest(url: URL(string: "http://52.176.106.72/register.php")!)
+        request.httpMethod = "POST"
+        let postString = "email=" + email.text! + "&password=" + password.text!
+        request.httpBody = postString.data(using: .utf8)
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if error != nil {
+                print(error ?? "An unknown error occured.")
+            }
+            else {
+                do {
+                    let parsedData = try JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
+                    print(parsedData)
+                    
+                    if let successful = parsedData["successful"] as? Bool {
+                        //LOGIN FAILED/INVALID CREDENTIALS (DISPLAY AN ERROR)
+                        if (successful == false) {
+                            if let message = parsedData["error"] as? String {
+                                displayError(errorText: self.errorText, errorMessage: message)
+                            }
+                        }
+                        else {
+                            //print(parsedData["user"])
+                            
+                                let defaults = UserDefaults.standard
+                                defaults.set(true, forKey: "loggedIn")
+                                defaults.set(self.email.text, forKey: "username")
+                                self.performSegue(withIdentifier: "registrationComplete", sender: nil)
+                        }
+                    }
+                } catch let error as NSError {
+                    print(error)
+                    print("hell")
+                }
+            }
+        }
+        let defaults = UserDefaults.standard
+        if (defaults.bool(forKey:"loggedIn") == true) {
+            print("made it here")
+            performSegue(withIdentifier: "registrationComplete", sender: nil)
+        }
+
+        checkIfLoggedIn()
+        task.resume()
+    }
+    
+    func checkIfLoggedIn() {
+        let defaults = UserDefaults.standard
+        if (defaults.bool(forKey:"loggedIn") == true) {
+            print("made it here")
+            performSegue(withIdentifier: "registrationComplete", sender: nil)
+        }
     }
 
     @IBAction func backToLoginButton(_ sender: UIButton) {
