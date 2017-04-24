@@ -35,6 +35,7 @@ class ChangeProfileViewController: UIViewController {
     }
     @IBAction func changeView(_ sender: Any) {
         setSelectedView()
+    
     }
     
     func setSelectedView() {

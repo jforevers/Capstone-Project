@@ -25,6 +25,8 @@ class RegistrationPickerViewController: UIViewController, PPScanningDelegate {
     var rurView : RuralViewController?
     var birView : BirthDateViewController?
     
+    var sigViewController : SignatureViewController?
+    
     var currView = 3
     
     var age = false
@@ -216,6 +218,32 @@ class RegistrationPickerViewController: UIViewController, PPScanningDelegate {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+       /* if(segue.identifier == "submit"){
+            
+            sigViewController?.address = (addView?.street.text)!
+            sigViewController?.dateOfBirth = (birView?.bDate.date)!
+            sigViewController?.city = (addView?.city.text)!
+            sigViewController?.fname = (namView?.fname_text.text)!
+            sigViewController?.lname = (namView?.lname_text.text)!
+            sigViewController?.mname = (namView?.mname_text.text)!
+            sigViewController?.phone = (birView?.phone.text)!
+            sigViewController?.placeOfBirth = (birView?.bPlace.text)!
+            sigViewController?.ssn = (birView?.SSN.text)!
+            sigViewController?.state = (addView?.state.text)!
+            sigViewController?.zip = (addView?.zip.text)!
+            
+            
+            if(namView?.gender_segment.selectedSegmentIndex == 0){
+                sigViewController?.gender = "m"
+            }
+            else{
+                sigViewController?.gender = "F"
+            }
+            
+            
+        }
+        */
         if let id = segue.identifier{
             switch(id){
             case "residency":

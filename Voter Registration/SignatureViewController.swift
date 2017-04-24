@@ -17,6 +17,25 @@ class SignatureViewController: UIViewController, EPSignatureDelegate {
     @IBOutlet weak var imgViewSignature: UIImageView!
     @IBOutlet weak var DateLabel: UILabel!
     var timer: Timer?
+    
+    /*var age: String = ""
+    var fname: String = ""
+    var lname: String = ""
+    var mname: String = ""
+    var address: String = ""
+    var city: String = ""
+    var state: String = ""
+    var zip: String = ""
+    var gender: String = ""
+    var ssn: String = ""
+    var placeOfBirth: String = ""
+    var phone: String = ""
+    var registrationDate: Date
+    var dateOfBirth: Date
+    var electionDistrict: String = "Columbia"
+    */
+    
+    
     let dateFormatter = DateFormatter()
     
     override func viewDidLoad() {
@@ -24,10 +43,20 @@ class SignatureViewController: UIViewController, EPSignatureDelegate {
         dateFormatter.dateStyle = .medium
         let date = NSDate()
         DateLabel.text = dateFormatter.string(from: date as Date)
-        self.hideKeyboardWhenTappedAround() 
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
 
+    
+    @IBAction func SubmitRegistration(_ sender: UIButton) {
+      /*  var request = URLRequest(url: URL(string: "http://52.176.106.72/voterReg.php")!)
+        request.httpMethod = "POST"
+        let postString = "email=" + email.text! + "&password=" + password.text!
+        request.httpBody = postString.data(using: .utf8)
+        */
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -44,8 +73,7 @@ class SignatureViewController: UIViewController, EPSignatureDelegate {
     }
     */
     
-    @IBAction func SubmitRegistration(_ sender: UIButton) {
-    }
+    
     
     @IBAction func addSignature(_ sender: Any) {
         let signatureVC = EPSignatureViewController(signatureDelegate: self, showsDate: true, showsSaveSignatureOption: true)
